@@ -73,7 +73,7 @@ $activeOpportunities =
 $conn->query("
   SELECT COUNT(*) AS total
   FROM opportunities
-  WHERE status = 'active'
+  WHERE status = 'متاحة'
 ")->fetch_assoc()['total'] ?? 0;
 
 // الفرص والمتطوعين
